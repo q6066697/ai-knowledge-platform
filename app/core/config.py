@@ -16,9 +16,15 @@ class Settings(BaseSettings):
     CHUNK_SIZE: int = 700
     CHUNK_OVERLAP: int = 100
     TOP_K: int = 5
-    SIMILARITY_THRESHOLD: float = 0.3
+    SIMILARITY_THRESHOLD: float = 0.0
 
     EMBEDDING_BATCH_SIZE: int = 100
+
+    ENABLE_HYBRID_SEARCH: bool = True
+    ENABLE_RERANKING: bool = True
+    RRF_K: int = 60
+    RERANK_CANDIDATES: int = 10
+    RERANKER_MODEL: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 
 @lru_cache
