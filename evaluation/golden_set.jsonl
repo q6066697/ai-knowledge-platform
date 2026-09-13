@@ -1,0 +1,12 @@
+{"id": "q1", "question": "How many days do I have to return a device?", "type": "answerable", "expected_answer_contains": ["45"], "expected_source_document": "test-knowledge-base.pdf", "expected_source_page": 1}
+{"id": "q2", "question": "If I'm not happy with my purchase, what's the window to send my Nimbus device back for a refund?", "type": "answerable", "expected_answer_contains": ["45"], "expected_source_document": "test-knowledge-base.pdf", "expected_source_page": 1}
+{"id": "q3", "question": "How long is the standard warranty period for Nimbus Cloud Storage devices?", "type": "answerable", "expected_answer_contains": ["2"], "expected_source_document": "test-knowledge-base.pdf", "expected_source_page": 1}
+{"id": "q4", "question": "How much does the 5 terabyte storage plan cost per month?", "type": "answerable", "expected_answer_contains": ["19.99"], "expected_source_document": "test-knowledge-base.pdf", "expected_source_page": 2}
+{"id": "q5", "question": "What's the monthly price for the larger storage tier of Nimbus Cloud Storage?", "type": "answerable", "expected_answer_contains": ["19.99"], "expected_source_document": "test-knowledge-base.pdf", "expected_source_page": 2}
+{"id": "q6", "question": "On which days of the week is customer support available?", "type": "answerable", "expected_answer_contains": ["Monday", "Friday"], "expected_source_document": "test-knowledge-base.pdf", "expected_source_page": 2}
+{"id": "q_neg1", "question": "Does Nimbus Cloud Storage support Android devices?", "type": "unanswerable", "expected_refusal": true}
+{"id": "q_neg2", "question": "Who is the CEO of Nimbus Cloud Storage?", "type": "unanswerable", "expected_refusal": true}
+{"id": "q_neg3", "question": "Does Nimbus Cloud Storage offer a mobile app with offline access?", "type": "unanswerable", "expected_refusal": true}
+{"id": "q_neg4", "question": "What is the maximum file size I can upload to Nimbus Cloud Storage?", "type": "unanswerable", "expected_refusal": true}
+{"id": "q_neg5", "question": "What is the capital of France?", "type": "unanswerable", "expected_refusal": true}
+{"id": "q_neg6", "question": "How do I bake a chocolate cake?", "type": "unanswerable", "expected_refusal": true}

@@ -1,0 +1,609 @@
+{
+  "summaries": [
+    {
+      "config": "dense_only",
+      "hit_at_3": 1,
+      "mrr": 1.0,
+      "answer_correctness": 1,
+      "hallucination_rate": 0.0
+    },
+    {
+      "config": "hybrid_no_rerank",
+      "hit_at_3": 1,
+      "mrr": 1.0,
+      "answer_correctness": 1,
+      "hallucination_rate": 0.0
+    },
+    {
+      "config": "hybrid_rerank",
+      "hit_at_3": 1,
+      "mrr": 1.0,
+      "answer_correctness": 1,
+      "hallucination_rate": 0.0
+    }
+  ],
+  "per_question": {
+    "dense_only": [
+      {
+        "id": "q1",
+        "question": "How many days do I have to return a device?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Вы можете вернуть устройство в течение 45 дней с даты его оригинальной покупки.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q2",
+        "question": "If I'm not happy with my purchase, what's the window to send my Nimbus device back for a refund?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Вы можете вернуть устройство Nimbus Cloud Storage в течение 45 дней с момента покупки для получения полного возмещения.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q3",
+        "question": "How long is the standard warranty period for Nimbus Cloud Storage devices?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Стандартный срок гарантии для устройств Nimbus Cloud Storage составляет 2 года.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q4",
+        "question": "How much does the 5 terabyte storage plan cost per month?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "The 5 terabyte storage plan costs 19.99 USD per month.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q5",
+        "question": "What's the monthly price for the larger storage tier of Nimbus Cloud Storage?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "The monthly price for the larger storage tier of Nimbus Cloud Storage (5 terabytes) is 19.99 USD.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q6",
+        "question": "On which days of the week is customer support available?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Customer support is available from Monday to Friday.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q_neg1",
+        "question": "Does Nimbus Cloud Storage support Android devices?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg2",
+        "question": "Who is the CEO of Nimbus Cloud Storage?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg3",
+        "question": "Does Nimbus Cloud Storage offer a mobile app with offline access?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg4",
+        "question": "What is the maximum file size I can upload to Nimbus Cloud Storage?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg5",
+        "question": "What is the capital of France?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg6",
+        "question": "How do I bake a chocolate cake?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      }
+    ],
+    "hybrid_no_rerank": [
+      {
+        "id": "q1",
+        "question": "How many days do I have to return a device?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Вы можете вернуть устройство в течение 45 дней с момента первоначальной покупки.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q2",
+        "question": "If I'm not happy with my purchase, what's the window to send my Nimbus device back for a refund?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Вы можете вернуть устройство Nimbus Cloud Storage в течение 45 дней с даты оригинальной покупки для полного возмещения.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q3",
+        "question": "How long is the standard warranty period for Nimbus Cloud Storage devices?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Стандартный гарантийный период для устройств Nimbus Cloud Storage составляет 2 года.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q4",
+        "question": "How much does the 5 terabyte storage plan cost per month?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "The 5 terabyte storage plan costs 19.99 USD per month.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q5",
+        "question": "What's the monthly price for the larger storage tier of Nimbus Cloud Storage?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "The monthly price for the larger storage tier of Nimbus Cloud Storage (5 terabytes) is 19.99 USD.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q6",
+        "question": "On which days of the week is customer support available?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Customer support is available from Monday to Friday.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q_neg1",
+        "question": "Does Nimbus Cloud Storage support Android devices?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg2",
+        "question": "Who is the CEO of Nimbus Cloud Storage?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg3",
+        "question": "Does Nimbus Cloud Storage offer a mobile app with offline access?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg4",
+        "question": "What is the maximum file size I can upload to Nimbus Cloud Storage?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg5",
+        "question": "What is the capital of France?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg6",
+        "question": "How do I bake a chocolate cake?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      }
+    ],
+    "hybrid_rerank": [
+      {
+        "id": "q1",
+        "question": "How many days do I have to return a device?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Вы имеете 45 дней с момента покупки, чтобы вернуть устройство Nimbus Cloud Storage.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q2",
+        "question": "If I'm not happy with my purchase, what's the window to send my Nimbus device back for a refund?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Вы можете вернуть ваше устройство Nimbus Cloud Storage в течение 45 дней с момента покупки для полного возврата средств.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q3",
+        "question": "How long is the standard warranty period for Nimbus Cloud Storage devices?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Стандартный гарантийный срок для устройств Nimbus Cloud Storage составляет 2 года.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q4",
+        "question": "How much does the 5 terabyte storage plan cost per month?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "The 5 terabyte storage plan costs 19.99 USD per month.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q5",
+        "question": "What's the monthly price for the larger storage tier of Nimbus Cloud Storage?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "The monthly price for the larger storage tier of Nimbus Cloud Storage (5 terabytes) is 19.99 USD.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q6",
+        "question": "On which days of the week is customer support available?",
+        "type": "answerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Customer support is available from Monday to Friday.",
+        "sources_empty": false,
+        "refusal_detected": false,
+        "hit_at_3": true,
+        "reciprocal_rank": 1.0,
+        "answer_correct": true
+      },
+      {
+        "id": "q_neg1",
+        "question": "Does Nimbus Cloud Storage support Android devices?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Не знаю.",
+        "sources_empty": false,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg2",
+        "question": "Who is the CEO of Nimbus Cloud Storage?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Я не нашёл ответа в загруженных документах.",
+        "sources_empty": true,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg3",
+        "question": "Does Nimbus Cloud Storage offer a mobile app with offline access?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Я не нашёл ответа в загруженных документах.",
+        "sources_empty": true,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg4",
+        "question": "What is the maximum file size I can upload to Nimbus Cloud Storage?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Я не нашёл ответа в загруженных документах.",
+        "sources_empty": true,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg5",
+        "question": "What is the capital of France?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Я не нашёл ответа в загруженных документах.",
+        "sources_empty": true,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      },
+      {
+        "id": "q_neg6",
+        "question": "How do I bake a chocolate cake?",
+        "type": "unanswerable",
+        "retrieved_docs": [
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf",
+          "test-knowledge-base.pdf"
+        ],
+        "answer": "Я не нашёл ответа в загруженных документах.",
+        "sources_empty": true,
+        "refusal_detected": true,
+        "hit_at_3": null,
+        "reciprocal_rank": null,
+        "answer_correct": null
+      }
+    ]
+  }
+}
