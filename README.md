@@ -88,6 +88,35 @@ streamlit run frontend/streamlit_app.py
 
 API — `http://localhost:8000` (Swagger: `/docs`), UI — `http://localhost:8501`.
 
+## Тесты
+
+Тесты используют **отдельную** базу данных, а не ту, что использует запущенное приложение —
+`test_chat.py::empty_database` удаляет все документы/чанки в базе, к которой подключается, и
+её нельзя случайно направить на базу с реальными данными.
+
+```bash
+# 1. Добавить TEST_DATABASE_URL в .env (отдельная БД, не DATABASE_URL!)
+#    см. .env.example — по умолчанию ai_knowledge_platform_test
+echo "TEST_DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/ai_knowledge_platform_test" >> .env
+
+# 2. Создать тестовую БД и прогнать миграции
+docker exec ai-knowledge-platform-db createdb -U postgres ai_knowledge_platform_test
+DATABASE_URL=$TEST_DATABASE_URL alembic upgrade head
+
+# 3. Запустить тесты
+pytest -v
+```
+
+`tests/conftest.py` переопределяет `DATABASE_URL` на `TEST_DATABASE_URL` до импорта любых
+модулей приложения (движок SQLAlchemy создаётся при импорте `app.db.database`), поэтому весь
+прогон — включая `TestClient`-тесты `/chat` и `/documents` — идёт через тестовую БД. Если
+`TEST_DATABASE_URL` не задан, `conftest.py` явно падает с ошибкой вместо того, чтобы тихо
+использовать `DATABASE_URL`.
+
+Проверено вручную: `GET /documents` на запущенном (не тестовом) приложении даёт одинаковый
+результат до и после полного прогона `pytest`, при этом счётчик документов в
+`ai_knowledge_platform_test` после прогона — 0.
+
 ## Пример запроса/ответа
 
 ```bash
